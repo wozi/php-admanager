@@ -1,0 +1,21 @@
+# Define the domain in use for user accounts
+domain: "MA\"
+# Max SMA name length
+MAX_USERNAME_LENGTH: 20
+hash_password: false
+
+# db connection params
+db:
+ addr: localhost
+ login: login
+ password: password
+ base: ad_manager
+
+ldap:
+ ldap_server: "172.xx.xx.xx"
+ ldap_login: "login"
+ ldap_password: "password"
+
+email:
+ sender: email@email.com
+ admin: email@email.com

@@ -1,0 +1,37 @@
+passwords_no_cohesion: "The 2 passwords do not match. Make sure they are identical."
+passwords_no_unicity: "The firstname or lastname appears in the password. Please make sure the password does not include the firstname or lastname."
+passwords_fail_length: "The password does not respect the security policy. Your password must be at least 8 characters long and contain a combination of uppercase and lowercase letters and numerals."
+all_fields_required: "Some fields are not filled in or the email entered is incorrect."
+
+
+firstname_empty: "Field First Name is empty."
+lastname_empty: "Field Last Name is empty."
+email_empty: "Field  E-mail is empty."
+bu_empty: "Field Business Unit is empty."
+
+errors:
+ ad_connection: "Can't connect to the Active Directory server."
+ user_exists: "This user already exists."
+
+messages: 
+ user_created: "The user @USER@ has been created.</p><p>You now need to ask your site manager to grant you rights within the section you wish to access.<br>You'll then be able to log into Sharepoint.</p>"
+ no_user_for_email: "No existing user has been found for the e-mail @EMAIL@. <br><br>Please use the Create my account page to create a new account or ask your logins to the administrators if you believe you already have an account."
+ password_sent: "Your password has been sent to @EMAIL@"
+ email_invalid: "The entered e-mail is invalid."
+ 
+change_password:
+ old_incorrect: "Old password is not correct."
+ no_match: "The 2 new passwords do not match."
+ name_in_password: "The firstname or lastname appears in the password. Please make sure the password does not include the firstname or lastname."
+ security_fail: "The password does not respect the security policy. Your password must be at least 8 characters long and contain a combination of uppercase and lowercase letters and numerals."
+ success: "The password has been changed."
+ failed: "Change password failed!"
+ 
+email:
+ your_logins: "Your logins"
+ logins_body: "<p>Your account has been created,</p><p><b>Your login:</b> @LOGIN@<br><b>Your password: </b>@PASSWORD@</p>You will now be able to log to Sharepoint into the sites from which you have access.<br>Please contact your Sharepoint Site Manager for the next steps.</p>"
+ from: "Sharepoint Pass"
+ new_account_subject: "New account created!"
+ new_account_body: "<p>Dear admins,</p><p>A new user has created an account.</p><p><b>Login of this new user:</b> @LOGIN@<br><b>E-mail: </b>@EMAIL@</p>"
+ remind_password_subject: "Your logins"
+ remind_password_body: "<p>Dear user,</p><p>As requested, here are your login details.</p><p><b>Your login:</b> @LOGIN@<br><b>Your password: </b>@PASSWORD@</p>"
