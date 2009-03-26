@@ -1,6 +1,6 @@
 <?php
-include ('../core/class.gosharepoint.php');
-$go = new gosharepoint ();
+include ('../core/class.adManager.php');
+$go = new adManager ();
 
 $country = (isset ($_POST ['bu'])) ? $_POST ['bu'] : '';
 ?>
@@ -21,7 +21,7 @@ $country = (isset ($_POST ['bu'])) ? $_POST ['bu'] : '';
 	<div id="menu">
 	  <ul>
 		<li><a href="?create">Create my account</a></li>
-		<?php if (!$go->useHashPasswords): ?><li><a href="?getpassword">Get my password</a></li><?php endif; ?>
+		<li><a href="?getpassword">Get my password</a></li>
 		<li><a href="?changepassword">Change my password</a></li>
 	  </ul>
 	</div>
@@ -175,7 +175,7 @@ $country = (isset ($_POST ['bu'])) ? $_POST ['bu'] : '';
 	  </div>
 	  
 	  <div id="footer">
-		<p>AD Account Manager 1.0.3.1</p>
+		<p>AD Account Manager 1.0.3.0</p>
 	  </div>
 	  
   </div>
