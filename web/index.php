@@ -175,7 +175,7 @@ $country = (isset ($_POST ['bu'])) ? $_POST ['bu'] : '';
 	  </div>
 	  
 	  <div id="footer">
-		<p>AD Account Manager 1.0.3.0</p>
+		<p>AD Account Manager 1.0.3.1</p>
 	  </div>
 	  
   </div>

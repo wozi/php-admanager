@@ -240,7 +240,7 @@ class adManager {
 		// Check that we have at least one letter in lowercase.
 		if (!preg_match ("/[a-z]+/", $this->password)) return false;
 		
-		/ Check that we have at least one letter in Uppercase.
+		// Check that we have at least one letter in Uppercase.
 		if (!preg_match ("/[A-Z]+/", $this->password)) return false;
 		
 		// Check that we have at least one number
@@ -295,11 +295,11 @@ class adManager {
 		// Replace the spaces by -
 		$firstname = preg_replace ("/[ ]+/i", "-", $this->firstname);
 		$lastname = preg_replace ("/[ ]+/i", "-", $this->lastname);
-		
+
 		// replace the the ' by -
-		$firstname = preg_replace ("/[\']+/i", "-", $this->firstname);
-		$lastname = preg_replace ("/[\']+/i", "-", $this->lastname);
-		
+		$firstname = preg_replace ("/[\']+/i", "-", $firstname);
+		$lastname = preg_replace ("/[\']+/i", "-", $lastname);
+
 		// Concat the 2
 		$username = strtolower ($firstname.".".$lastname);
 		
@@ -318,7 +318,7 @@ class adManager {
 		$ldap = $this->createLdap ();
 		
 		$sma = $this->createUserName ();
-
+		
 		/**
 		 *	Check that the user is not already in the base, (NOT in the country folder so we make sure we don't have doublons)
 		 */
